@@ -57,6 +57,9 @@ module ToyRobotSimulator
 
     private
 
+    # Internal: checks if the new coordinates valid
+    #
+    # Returns Boolean
     def valid?(x, y)
       x >= 0 && x < 5 && y >= 0 && y < 5
     end

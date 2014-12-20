@@ -70,6 +70,9 @@ module ToyRobotSimulator
       end
     end
 
+    # Internal: check if the coordinates and facing valid
+    #
+    # Returns Boolean
     def valid?(x, y, f)
       Robot::ORIENTATIONS.include?(f) && (x >= 0 && x < 5 && y >= 0 && y < 5)
     end

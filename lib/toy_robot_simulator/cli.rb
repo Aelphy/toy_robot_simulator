@@ -22,6 +22,9 @@ module ToyRobotSimulator
 
     private
 
+    # Internal: create and initialize option parser
+    #
+    # Returns OptionParser
     def create_option_parser
       OptionParser.new do |parser|
         parser.banner = "Toy Robot Simulation\nUsage: toy_robot_simulator [options]"
