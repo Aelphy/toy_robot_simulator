@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'toy_robot_simulator'
+ToyRobotSimulator::Cli.new(ARGV).run
