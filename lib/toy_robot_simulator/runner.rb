@@ -74,7 +74,7 @@ module ToyRobotSimulator
     #
     # Returns Boolean
     def valid?(x, y, f)
-      Robot::ORIENTATIONS.include?(f) && (x >= 0 && x < 5 && y >= 0 && y < 5)
+      Robot::ORIENTATIONS.include?(f) && (x >= 0 && x < Robot::MAX_WIDTH && y >= 0 && y < Robot::MAX_HEIGHT)
     end
   end # class Runner
 end # module ToyRobotSimulator

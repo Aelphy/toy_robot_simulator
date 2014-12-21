@@ -1,5 +1,7 @@
 module ToyRobotSimulator
   class Robot
+    MAX_WIDTH = 5
+    MAX_HEIGHT = 5
     ORIENTATIONS = %w(north east south west)
     DIRECTIONS = {
         north: {x: 0, y: 1},
@@ -61,7 +63,7 @@ module ToyRobotSimulator
     #
     # Returns Boolean
     def valid?(x, y)
-      x >= 0 && x < 5 && y >= 0 && y < 5
+      x >= 0 && x < MAX_WIDTH && y >= 0 && y < MAX_HEIGHT
     end
   end # class Robot
 end # module ToyRobotSimulator
